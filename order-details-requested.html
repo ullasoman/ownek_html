@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Order Details Requested | Ownek</title>
+  <!-- plugins:css -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/datatables.net-bs4/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="dashboard.html">Ownek</a>
+        <a class="navbar-brand brand-logo-mini" href="dashboard.html"><img src="assets/images/logo-mini.svg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <!-- <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div> -->
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search here" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+          
+          <li class="nav-item nav-profile dropdown nav__profile__name">
+            <span>Hello, <label class="profile__name">AsifHayat</label></span>
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="assets/images/faces/face28.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="index.html">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+    
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="order-list.html">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Order List</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customers.html">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Customers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business-users.html">
+              <i class="icon-briefcase menu-icon"></i>
+              <span class="menu-title">Business Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="drivers.html">
+              <i class="icon-help menu-icon"></i>
+              <span class="menu-title">Drivers</span>
+              <!-- <i class="menu-arrow"></i> -->
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="blocked-drivers.html">Blocked Drivers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chat.html">
+              <i class="icon-mail menu-icon"></i>
+              <span class="menu-title">Chat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery-rules.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Deliver Rules</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuration.html">
+              <i class="icon-cog menu-icon"></i>
+              <span class="menu-title">Configuration</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-power menu-icon"></i>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-normal primary__text__color">#547896</h3>
+                  <p class="font-weight-normal mb-0 text__light">This is Order List data.</p>
+                </div>
+                <div class="col-12 col-xl-4">
+                  <div class="justify-content-end d-flex gap-1">
+                    <div class="bg__dark">
+                        <img src="assets/images/folder-cross.svg"> Cancel Order
+                      </div>
+                    <div class="bg__dark">
+                      <img src="assets/images/messages-white.svg"> Order Chat
+                    </div>
+                  </div>
+              </div>
+              </div>
+               <!-- content -->
+               <div class="row mt-5 mb-4">
+                    <div class="col-8 col-sm-6 col-md-6 col-xl-9">
+                        <div class="card">
+                            <div class="card-header justify-content-between">
+                                <div>
+                                    <h4 class="card-title">Location</h4>
+                                    <p class="description">Package Pickup and Deliver Locations</p>
+                                </div>
+                                <p class="theme__text__color font__12"> <i class="ti-location-pin mr-1"></i> Driver Now at : Pick up Location</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Pickup -->
+                                    <div class="col-md-6">
+                                        <p class="mb-2">Pickup</p>
+                                        <div>
+                                            <span class="font__12 theme__text__color">1st Location</span>
+                                            <p class="font__16">Bordentown, <small>New Jersey, USA</small></p>
+                                        </div>
+                                        <div>
+                                            <span class="font__12 theme__text__color">Mode Details</span>
+                                            <p class="text__primary">Street Name: St. Full Name very Detailed</p>
+                                            <p class="text__primary">Flat number:Building no3. flat 4</p>
+                                            <p class="text__primary">special instructions</p>
+                                        </div>
+                                    </div>
+                                    <!-- Pickup -->
+                                    <!-- Deliver -->
+                                    <div class="col-md-6">
+                                        <p class="mb-2">Deliver</p>
+                                        <div>
+                                            <span class="font__12 theme__text__color">1st Location</span>
+                                            <p class="font__16">Bordentown, <small>New Jersey, USA</small></p>
+                                        </div>
+                                        <div class="mb-5">
+                                            <span class="font__12 theme__text__color">Mode Details</span>
+                                            <p class="text__primary">Street Name: St. Full Name very Detailed</p>
+                                            <p class="text__primary">Flat number:Building no3. flat 4</p>
+                                            <p class="text__primary">special instructions</p>
+                                        </div>
+                                        <div>
+                                            <span class="font__12 theme__text__color">2nd Location</span>
+                                            <p class="font__16">Bordentown, <small>New Jersey, USA</small></p>
+                                        </div>
+                                        <div>
+                                            <span class="font__12 theme__text__color">Mode Details</span>
+                                            <p class="text__primary">Street Name: St. Full Name very Detailed</p>
+                                            <p class="text__primary">Flat number:Building no3. flat 4</p>
+                                            <p class="text__primary">special instructions</p>
+                                        </div>
+                                    </div>
+                                    <!-- Deliver -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-3">
+                        <div class="card mb-3">
+                            <div class="card-body p-4">
+                                <div class="mb-4"><span class="status__box btn__red">Requested</span></div>
+                                <div class="d-flex align-center justify-content-between flex-wrap gap-1">
+                                    <div>
+                                        <p class="font__12 text__primary">Order Type</p>
+                                        <h6 class="font__16 theme__text__color">Pickup & Deliver</h6>
+                                    </div>
+                                    <div>
+                                        <p class="font__12 text__primary">Vehicle</p>
+                                        <h6 class="font__16 theme__text__color">Car</h6>
+                                    </div>
+                                    <div>
+                                        <p class="font__12 text__primary">Final Cost</p>
+                                        <h6 class="font__16 theme__text__color">140 AED</h6>
+                                    </div>
+                                    <div>
+                                        <p class="font__12 text__primary">Duration</p>
+                                        <h6 class="font__16 theme__text__color">30 min</h6>
+                                    </div>
+                                    <div>
+                                        <p class="font__12 text__primary">Order Placed Time</p>
+                                        <h6 class="font__16 theme__text__color">12 Sep 2023, 04:23 PM</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Row : Order Users-->
+                <div class="row">
+                    <div class="col-8 col-sm-6 col-md-6 col-xl-9">
+                      <div class="card mb-4">
+                        <div class="card-header">
+                          <div>
+                            <h4 class="card-title">Order Users</h4>
+                            <p class="description">Package Pickup and Deliver Locations</p>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <!-- Order Owner -->
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column">
+                                <p>Order Owner</p>
+                                <div class="card__details__left gap-1">
+                                  <img src="assets/images/rectangle-64x65.png" class="img-lm img-rounded" alt="profile image">
+                                  <div class="card__details justify-content-center">
+                                      <h4 class="mb-1">Asif Hayat</h4>
+                                      <p class="text__light font__12 theme__text__color"><i class="ti-location-pin me-1"></i> 21 Long Beach Tower, Location</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Order Owner -->
+                            <!-- Order Driver -->
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column">
+                                <p>Order Driver</p>
+                                <div class="card__details__left gap-1">
+                                  <img src="assets/images/order-driver.png" class="img-lm img-rounded" alt="profile image">
+                                  <div class="card__details justify-content-center">
+                                      <h4 class="mb-1">Asif Hayat</h4>
+                                      <ul class="p-0 d-flex mb-0">
+                                        <li><img src="assets/images/star.svg"></li>
+                                        <li><img src="assets/images/star.svg"></li>
+                                        <li><img src="assets/images/star.svg"></li>
+                                        <li><img src="assets/images/star.svg"></li>
+                                        <li><span class="text__light ml-2">4.0</span></li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Order Driver -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Row : Order Users-->
+                <!-- Row : Package Details -->
+                <div class="row">
+                  <div class="col-8 col-sm-6 col-md-6 col-xl-9">
+                    <div class="card mb-4">
+                      <div class="card-header">
+                        <div>
+                          <h4 class="card-title">Package</h4>
+                          <p class="description">Package Details</p>
+                        </div>
+                        
+                      </div>
+                      <!-- -->
+                      <div class="card-body">
+                        <div class="row mb-4">
+                          <div class="col-md-1">
+                            <img src="assets/images/box.svg" class="img-sm"> 
+                          </div>
+                          <div class="col-md-11">
+                           <div class="row">
+                            <div class="col-md-4">
+                              <h6 class="mb-1">Package Name</h6>
+                              <p class="text__light">Package Name</p>
+                            </div>
+                            <div class="col-md-4">
+                              <h6 class="mb-1">Package Weight</h6>
+                              <p class="text__light">500 gram</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Receiver Number</h6>
+                                <p class="text__light">000-000-0000</p>
+                            </div>
+                            <div class="col-md-4 mt-4">
+                              <h6 class="mb-1">Package Description</h6>
+                              <p class="text__light">Package description</p>
+                          </div>
+                           </div>
+                          </div>
+                        </div>
+                        
+                     
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- Row : Package Details -->
+                <!-- content -->
+            </div>
+        </div>
+    </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.</span>
+            <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> -->
+          </div>
+        
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="assets/js/base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="assets/js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
