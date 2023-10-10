@@ -736,7 +736,7 @@ Magic
     top: 0;
   }
   .login__bg__texture:after{
-    top: -96px;
+    top: -100px;
   }
   .login__card {
     top: 25%;
