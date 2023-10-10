@@ -728,6 +728,21 @@ Magic
 /* Responsive Design */
 
 @media (max-width: 480px) {
+  /* Login */
+  .login__bg__texture{
+    height: 500px;
+  }
+  .login__intro{
+    top: 0;
+  }
+  .login__bg__texture:after{
+    top: -96px;
+  }
+  .login__card {
+    top: 25%;
+    left: 0;
+  }
+  /* Login */
   .navbar{
     box-shadow: 0px 5px 21px -5px #CDD1E1;
   }
